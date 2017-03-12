@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>K-Means</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="display">
+      <div id="drop-zone">Upload Image</div>
+      <div class="canvas-container" id="canvas-container"></div>
+    </div>
+    <div class="iterations" id="iterations"></div>
+    <div class="controls">
+      <label for="k-value">K</label>
+      <input class="input" type="number" name="k-value" id="k-value" value="5">
+      <label for="iterations">Iterations</label>
+      <input class="input" type="number" name="iterations" id="iterations" value="5">
+      <button class="btn" type="button" name="restart" id="restart" disabled>Restart</button>
+      <button class="btn" type="button" name="stop" id="stop" disabled>Stop</button>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
