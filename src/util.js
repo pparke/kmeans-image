@@ -135,12 +135,9 @@ export function handleFileSelect(evt, cb) {
 
   const reader = new FileReader();
 
-  // Closure to capture the file information.
-  reader.onload = (function(theFile) {
-    return function(e) {
-      cb(e.target.result);
-    };
-  })(file);
+  reader.onload = function(e) {
+    cb(e.target.result);
+  };
 
   reader.readAsDataURL(file);
 }
